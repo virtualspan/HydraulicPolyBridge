@@ -67,15 +67,14 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "org.geysermc.floodgate:api:2.2.4-SNAPSHOT"
+    modImplementation "org.geysermc.floodgate:api:${project.floodgate_version}"
 
-    // Fabric API. This is technically optional, but you probably want it anyway.
+    // Fabric API
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Polymer
     modImplementation "eu.pb4:polymer-core:${project.polymer_version}"
     modImplementation "eu.pb4:polymer-blocks:${project.polymer_version}"
-    modImplementation "eu.pb4:polymer-resource-pack:${project.polymer_version}"
 }
 
 processResources {

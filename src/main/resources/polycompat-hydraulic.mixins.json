@@ -6,7 +6,9 @@
     "GlobalItemReplacementBypassMixin",
     "GlobalItemUtilsBypassMixin",
     "GlobalBlockUtilsBypassMixin",
-    "GlobalBlockResourceUtilsAccessor"
+    "GlobalBlockResourceUtilsAccessor",
+    "GlobalEntityReplacementBypassMixin",
+    "GlobalEntityUtilsBypassMixin"
   ],
   "injectors": {
     "defaultRequire": 1
