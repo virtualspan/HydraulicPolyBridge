@@ -29,7 +29,8 @@
     "fabric-api": "*",
     "polymer-bundled": "*",
     "hydraulic": "*",
-    "geyser-fabric": "*"
+    "geyser-fabric": "*",
+    "floodgate": "*"
   },
   "suggests": {
     "hurricane": "*"
