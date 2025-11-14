@@ -16,7 +16,9 @@
   },
   "parent": "",
   "mixinPriority": -1,
-  "server": [],
+  "server": [
+    "ServerCommonNetworkHandlerAccessor"
+  ],
   "minVersion": "",
   "setSourceFile": false,
   "client": [],
