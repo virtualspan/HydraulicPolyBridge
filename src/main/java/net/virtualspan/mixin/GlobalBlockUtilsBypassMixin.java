@@ -11,6 +11,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.nucleoid.packettweaker.PacketContext;
 import org.geysermc.floodgate.api.FloodgateApi;
 
+/**
+ * Mixin to override Polymer block disguises for Floodgate (Bedrock) players.
+ * Ensures Bedrock clients see the real block state instead of disguised ones.
+ */
 @Mixin(PolymerBlockUtils.class)
 public class GlobalBlockUtilsBypassMixin {
     @Inject(method = "getBlockStateSafely", at = @At("RETURN"), cancellable = true)
@@ -23,10 +27,10 @@ public class GlobalBlockUtilsBypassMixin {
             ServerPlayerEntity player = ctx.getPlayer();
             if (player != null) {
                 if (FloodgateApi.getInstance().isFloodgatePlayer(player.getUuid())) {
-                    // Bedrock: bypass disguise
+                    // Bedrock: bypass disguise, return original block state
                     cir.setReturnValue(blockState);
                 } else {
-                    // Java: keep Polymer’s return value
+                    // Java: keep Polymer’s disguised return value
                     cir.setReturnValue(cir.getReturnValue());
                 }
             }
