@@ -1,3 +1,5 @@
+####  ⚠️ Warning: This mod is vibecoded and not actively maintained. Feel free to test out the mod but it may be unstable and contain bugs!
+
 # HydraulicPolyBridge
 HydraulicPolyBridge allows [Polymer Patch Mods](https://modrinth.com/mods?q=polymer+patch) and [PolyMc](https://github.com/TheEpicBlock/PolyMc) to work seamlessly alongside [Hydraulic](https://geysermc.org/download?project=other-projects&hydraulic=expanded), ensuring both Java and Bedrock players get a consistent experience.
 
